@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Reading Notes</title>
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Written by Git-a-Live">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="localcss/vue.css">
+  <link rel="stylesheet" href="localcss/style.min.css">
+  <link rel="stylesheet" href="localcss/docsify-gifcontrol.css">
+</head>
+
+<body>
+  <div id="app">加载中，请稍后······</div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      loadSidebar: 'sidebar.md',
+      subMaxLevel: 10,
+      auto2top: true,
+      coverpage: 'cover.md',
+      onlyCover: true,
+      search: 'auto',
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'
+        placeholder: '搜索',
+        noData: '未找到合适的结果',
+        // 搜索标题的最大层级, 1 - 6
+        depth: 6,
+        hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+        // 避免搜索索引冲突
+        // 同一域下的多个网站之间
+        namespace: 'website-1'
+      },
+      count:{
+        countable: true,
+        position: 'top',
+        margin: '10px',
+        float: 'left',
+        fontsize:'1.2em',
+        color:'rgb(90,90,90)',
+        language:'chinese',
+        localization: {
+          words: "",
+          minute: ""
+        },
+        isExpected: true
+      }
+    }
+  </script>
+  <script src="localjs/docsify-plugin-flexible-alerts"></script>
+  <script src="localjs/countable.min.js"></script>
+  <script src="localjs/docsify-pagination.min.js"></script>
+  <script src="localjs/pangu.min.js"></script>
+  <script src="localjs/docsify.min.js"></script>
+  <script src="localjs/index.min.js"></script>
+  <script src="localjs/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
+</body>
+
+</html>
